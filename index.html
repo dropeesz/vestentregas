@@ -1,192 +1,273 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diamond — Oversized com propósito</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond — Oversized com propósito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<svg class="noise" xmlns="http://www.w3.org/2000/svg">
-  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/></filter>
-  <rect width="100%" height="100%" filter="url(#n)"/>
-</svg>
+  <svg class="noise" xmlns="http://www.w3.org/2000/svg">
+    <filter id="n">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#n)" />
+  </svg>
 
-<header>
-  <div class="wrap header-inner">
-    <div class="brand-mark">
-      <img src="img/logo.png" alt="Diamond">
+  <header>
+    <div class="wrap header-inner">
+      <div class="brand-mark">
+        <img src="img/logo.png" alt="Diamond">
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav>
+        <a href="#colecao">Coleção</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#comprar">Como comprar</a>
+        <a class="nav-cta"
+          href="https://wa.me/5521965275735?text=Oi!%20Vim%20pelo%20site%20da%20Vest%20entregas%20e%20quero%20saber%20mais."
+          target="_blank" rel="noopener">
+          Chamar no zap
+        </a>
+      </nav>
     </div>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    <nav>
-      <a href="#colecao">Coleção</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#comprar">Como comprar</a>
-      <a class="nav-cta" href="https://wa.me/5521965275735?text=Oi!%20Vim%20pelo%20site%20da%20Vest%20entregas%20e%20quero%20saber%20mais." target="_blank" rel="noopener">
-        Chamar no zap
-      </a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<section class="hero">
-  <img class="hero-bg-diamond" src="img/diamond.png" alt="" aria-hidden="true">
+  <section class="hero">
+    <img class="hero-bg-diamond" src="img/diamond.png" alt="" aria-hidden="true">
+    <div class="wrap">
+      <img class="hero-diamond" src="img/diamond.png" alt="">
+      <img class="hero-logotype" src="img/logo.png" alt="Diamond — Vest Entregas">
+      <h1>Oversized que carrega propósito.</h1>
+      <p class="lede">Peças largas, caimento pesado e uma mensagem por trás de cada estampa. Fé no corte, estilo na rua.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid"
+          href="https://wa.me/5521965275735?text=Oi!%20Quero%20ver%20a%20cole%C3%A7%C3%A3o%20da%20Vest%20Entregas."
+          target="_blank" rel="noopener">Ver coleção no zap</a>
+        <a class="btn btn-ghost" href="#colecao">Explorar peças</a>
+      </div>
+    </div>
+  </section>
+
   <div class="wrap">
-    <img class="hero-diamond" src="img/diamond.png" alt="">
-    <img class="hero-logotype" src="img/logo.png" alt="Diamond — Vest Entregas">
-    <h1>Oversized que carrega propósito.</h1>
-    <p class="lede">Peças largas, caimento pesado e uma mensagem por trás de cada estampa. Fé no corte, estilo na rua.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-solid" href="https://wa.me/5521965275735?text=Oi!%20Quero%20ver%20a%20cole%C3%A7%C3%A3o%20da%20Vest%20Entregas." target="_blank" rel="noopener">Ver coleção no zap</a>
-      <a class="btn btn-ghost" href="#colecao">Explorar peças</a>
-    </div>
+    <div class="divider"></div>
   </div>
-</section>
 
-<div class="wrap"><div class="divider"></div></div>
-
-<section id="sobre" class="section-pad">
-  <div class="wrap about-grid">
-    <div class="verse-block">
-      <p class="verse-text verse">"Revesti-vos de toda a armadura de Deus, para poderdes estar firmes."</p>
-      <p class="verse-ref">Efésios 6:11</p>
-    </div>
-    <div class="about-copy">
-      <h2>Roupa também é declaração.</h2>
-      <p>A Diamond nasceu pra unir duas coisas que muita gente separa: o estilo oversized que domina a rua e uma fé que a gente carrega no peito, sem forçar a barra.</p>
-      <p>Cada peça é pensada pro caimento pesado, tecido encorpado e detalhe discreto — do jeito que quem entende de streetwear gosta, mas com uma mensagem que fica.</p>
-      <p>Entrega combinada direto com você, sem enrolação. É só chamar no WhatsApp.</p>
-    </div>
-  </div>
-</section>
-
-<section id="colecao" class="section-pad paper-bg">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Alguns exemplos</h2>
-      <!-- <p>Modelos em produção — fotos reais sobem em breve. Chama no zap pra ver tecido e disponibilidade agora.</p> -->  
-    </div>
-
-    <div class="grid-products">
-
-      <div class="card">
-        <div class="card-art">
-          <img src="img/Gemini_Generated_Image_o8rhc5o8rhc5o8rh.jpg" alt="Oversized Firmeza Bege" loading="lazy">
-        </div>
-        <div class="card-body">
-          <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized." target="_blank" rel="noopener">Pedir no zap</a>
-        </div>
+  <section id="sobre" class="section-pad">
+    <div class="wrap about-grid">
+      <div class="verse-block">
+        <p class="verse-text verse">"Revesti-vos de toda a armadura de Deus, para poderdes estar firmes."</p>
+        <p class="verse-ref">Efésios 6:11</p>
       </div>
-
-      <div class="card">
-        <div class="card-art">
-          <img src="img/Gemini_Generated_Image_6s1vef6s1vef6s1v.jpg" alt="Oversized Armadura Marrom" loading="lazy">
-        </div>
-        <div class="card-body">
-          <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized." target="_blank" rel="noopener">Pedir no zap</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-art">
-          <img src="img/ChatGPT Image 18 de set. de 2026, 17_14_09.png" alt="Oversized Constância Stone" loading="lazy">
-        </div>
-        <div class="card-body">
-          <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized." target="_blank" rel="noopener">Pedir no zap</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-art">
-          <img src="img/Gemini_Generated_Image_1qw5ag1qw5ag1qw5.jpg" alt="Oversized Diamante Gold" loading="lazy">
-        </div>
-        <div class="card-body">
-          <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized." target="_blank" rel="noopener">Pedir no zap</a>
-        </div>
-      </div>
-
-    </div>
-    <!-- <p class="placeholder-note">* Preços e nomes de exemplo — troca fácil quando você mandar a tabela real.</p> -->
-  </div>
-</section>
-
-<section id="comprar" class="section-pad">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Como comprar</h2>
-      <p>Sem carrinho, sem cadastro. Direto com a gente.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Escolhe o modelo</h3>
-        <p>Dá uma olhada no nosso instagram e separa a peça (ou as peças) que você curtiu.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Chama no WhatsApp</h3>
-        <p>Manda mensagem com o modelo e o tamanho. A gente confirma cor, estoque e valor na hora.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Recebe em casa</h3>
-        <p>Combinamos entrega ou envio e você acompanha tudo direto pelo zap.</p>
+      <div class="about-copy">
+        <h2>Roupa também é declaração.</h2>
+        <p>A Vest Entregas Diamond nasceu pra unir duas coisas que muita gente separa: o estilo oversized que domina a
+          rua e uma fé que a gente carrega no peito, sem forçar a barra.</p>
+        <p>Cada peça é pensada pro caimento pesado, tecido encorpado e detalhe discreto — do jeito que quem entende de
+          streetwear gosta, mas com uma mensagem que fica.</p>
+        <p>Entrega combinada direto com você, sem enrolação. É só chamar no WhatsApp.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-strip">
-  <div class="wrap">
-    <h2>Bora fechar seu look?</h2>
-    <p>Chama agora e já sai sabendo tamanho, cor e prazo.</p>
-    <a class="btn btn-solid" href="https://wa.me/5521965275735?text=Oi!%20Quero%20fazer%20um%20pedido%20na%20Vest%20Entregas." target="_blank" rel="noopener">Chamar no WhatsApp</a>
-  </div>
-</section>
+  <section id="colecao" class="section-pad paper-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Alguns exemplos</h2>
+        <!-- <p>Modelos em produção — fotos reais sobem em breve. Chama no zap pra ver tecido e disponibilidade agora.</p> -->
+      </div>
 
-<!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
-  <div class="wrap">
+      <div class="grid-products">
 
-    <div class="footer-top">
+        <div class="card">
+          <div class="card-art">
+            <img src="img/Gemini_Generated_Image_o8rhc5o8rhc5o8rh.jpg" alt="Oversized Firmeza Bege" loading="lazy">
+          </div>
+          <div class="card-body">
+            <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized."
+              target="_blank" rel="noopener">Pedir no zap</a>
+          </div>
+        </div>
 
-      <div class="footer-col">
-        <h3 class="footer-title">Departamentos</h3>
-        <ul class="footer-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#colecao">Coleção</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#comprar">Como comprar</a></li>
+        <div class="card">
+          <div class="card-art">
+            <img src="img/Gemini_Generated_Image_6s1vef6s1vef6s1v.jpg" alt="Oversized Armadura Marrom" loading="lazy">
+          </div>
+          <div class="card-body">
+            <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized."
+              target="_blank" rel="noopener">Pedir no zap</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-art">
+            <img src="img/ChatGPT Image 18 de set. de 2026, 17_14_09.png" alt="Oversized Constância Stone"
+              loading="lazy">
+          </div>
+          <div class="card-body">
+            <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized."
+              target="_blank" rel="noopener">Pedir no zap</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-art">
+            <img src="img/Gemini_Generated_Image_1qw5ag1qw5ag1qw5.jpg" alt="Oversized Diamante Gold" loading="lazy">
+          </div>
+          <div class="card-body">
+            <a class="card-buy" href="https://wa.me/5521965275735?text=Oi!%20Quero%20as%20camisas%20Oversized."
+              target="_blank" rel="noopener">Pedir no zap</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- <p class="placeholder-note">* Preços e nomes de exemplo — troca fácil quando você mandar a tabela real.</p> -->
+    </div>
+  </section>
+
+
+  <!-- ===== SEÇÃO: TECIDO SUEDINE + ESTAMPA DTF =====
+     Cole entre a seção #colecao e a seção #comprar.
+     O CSS está em secao-tecido.css (cole no final do style.css). -->
+  <section id="tecido" class="section-pad tecido">
+    <div class="wrap">
+
+      <div class="section-head">
+        <h2>Tecido que veste bem.<br>Estampa que fica.</h2>
+        <p>O caimento pesado do oversized começa no tecido, e a mensagem chega na estampa.</p>
+      </div>
+
+      <div class="tecido-grid">
+
+        <article class="tecido-panel">
+          <h3>Tecido suedine</h3>
+          <p class="tecido-lead">Uma malha de toque macio e acabamento aveludado, que lembra camurça. Encorpada,
+            sustenta o caimento largo sem ficar pesada de usar.</p>
+          <ul class="tecido-list">
+            <li>Toque macio e aveludado na pele</li>
+            <li>Corpo firme, com caimento pesado</li>
+            <li>Acabamento fosco, sem brilho</li>
+            <li>Confortável pro uso no dia a dia</li>
+          </ul>
+        </article>
+
+        <article class="tecido-panel">
+          <h3>Estampa em DTF</h3>
+          <p class="tecido-lead">DTF (Direct to Film) é a impressão feita em filme e transferida pro tecido com calor.
+            Deixa a arte do jeito que foi desenhada, com detalhe fino e cor cheia.</p>
+          <ul class="tecido-list">
+            <li>Alta definição, até nos traços mais finos</li>
+            <li>Cores vivas e degradês</li>
+            <li>Estampa flexível, que acompanha o tecido</li>
+            <li>Artes com muitas cores, sem perder qualidade</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="tecido-care">
+        <h3>Pra estampa durar mais</h3>
+        <ul>
+          <li>Lave do avesso</li>
+          <li>Use água fria ou morna</li>
+          <li>Evite alvejante</li>
+          <li>Passe o ferro pelo avesso</li>
         </ul>
       </div>
 
-      <div class="footer-col">
-        <h3 class="footer-title">Entre em contato</h3>
-        <ul class="footer-list">
-          <li><a href="https://wa.me/5521965275735" target="_blank" rel="noopener">+55 21 96527-5735</a></li>
-          <li><a href="https://www.instagram.com/vest_entregas_diamond?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@vest_entregas_diamond</a></li>
-          <li><span>Entrega combinada direto pelo WhatsApp</span></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-brand">
-        <img src="img/logo.png" alt="Diamond — Vest Entregas">
-      </div>
-
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <span>© 2026 — Vest Entregas Diamond todos os direitos reservados.</span>
-      <span>Feito pra quem veste largo e caminha firme.</span>
-    </div>
-
+  <div class="wrap">
+    <div class="divider"></div>
   </div>
-</footer>
+  <section id="comprar" class="section-pad">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Como comprar</h2>
+        <p>Sem carrinho, sem cadastro. Direto com a gente.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Escolhe o modelo</h3>
+          <p>Dá uma olhada no nosso instagram e separa a peça (ou as peças) que você curtiu.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Chama no WhatsApp</h3>
+          <p>Manda mensagem com o modelo e o tamanho. A gente confirma cor, estoque e valor na hora.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Recebe em casa</h3>
+          <p>Combinamos entrega ou envio e você acompanha tudo direto pelo zap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <section class="cta-strip">
+    <div class="wrap">
+      <h2>Bora fechar seu look?</h2>
+      <p>Chama agora e já sai sabendo tamanho, cor e prazo.</p>
+      <a class="btn btn-solid"
+        href="https://wa.me/5521965275735?text=Oi!%20Quero%20fazer%20um%20pedido%20na%20Vest%20Entregas."
+        target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <div class="footer-top">
+
+        <div class="footer-col">
+          <h3 class="footer-title">Departamentos</h3>
+          <ul class="footer-list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#colecao">Coleção</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#comprar">Como comprar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Entre em contato</h3>
+          <ul class="footer-list">
+            <li><a href="https://wa.me/5521965275735" target="_blank" rel="noopener">+55 21 96527-5735</a></li>
+            <li><a
+                href="https://www.instagram.com/vest_entregas_diamond?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                target="_blank" rel="noopener">@vest_entregas_diamond</a></li>
+            <li><span>Entrega combinada direto pelo WhatsApp</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-brand">
+          <img src="img/logo.png" alt="Diamond — Vest Entregas">
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 — Vest Entregas Diamond todos os direitos reservados.</span>
+        <span>Feito pra quem veste largo e caminha firme.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

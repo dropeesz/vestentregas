@@ -305,3 +305,63 @@ nav.open .nav-cta{margin-top:12px; width:100%; justify-content:center;}
   .hero-diamond, .hero-logotype{animation:none; opacity:1; transform:none;}
   *{transition-duration:.01ms !important;}
 }
+/* ---------- TECIDO SUEDINE + ESTAMPA DTF ---------- */
+.tecido-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:0;
+  border:1.5px solid color-mix(in srgb, var(--wood) 35%, transparent);
+  background:var(--paper);
+}
+.tecido-panel{
+  padding:38px 34px 36px;
+}
+.tecido-panel + .tecido-panel{
+  border-left:1.5px solid color-mix(in srgb, var(--wood) 30%, transparent);
+}
+.tecido-panel h3{
+  font-size:clamp(26px,3vw,34px);
+  margin-bottom:16px;
+  color:var(--ink);
+}
+.tecido-lead{
+  font-size:15.5px; line-height:1.7; color:var(--stone);
+  max-width:46ch; margin-bottom:22px;
+}
+.tecido-list{list-style:none;}
+.tecido-list li{
+  position:relative;
+  padding:11px 0 11px 26px;
+  font-size:14.5px; color:var(--ink);
+  border-top:1px solid color-mix(in srgb, var(--wood) 20%, transparent);
+}
+.tecido-list li::before{
+  content:""; position:absolute; left:2px; top:50%;
+  width:8px; height:8px; background:var(--gold);
+  transform:translateY(-50%) rotate(45deg);
+}
+
+.tecido-care{
+  margin-top:26px;
+  display:flex; align-items:center; gap:28px 40px; flex-wrap:wrap;
+  padding:22px 4px 0;
+}
+.tecido-care h3{
+  font-family:'Jost',sans-serif; font-weight:600;
+  font-size:17px; line-height:1.2; color:var(--ink);
+}
+.tecido-care ul{
+  list-style:none; display:flex; flex-wrap:wrap; gap:10px 12px;
+}
+.tecido-care li{
+  font-size:13.5px; color:var(--stone);
+  padding:7px 14px;
+  border:1.5px solid color-mix(in srgb, var(--wood) 30%, transparent);
+}
+
+@media (max-width:860px){
+  .tecido-grid{grid-template-columns:1fr;}
+  .tecido-panel{padding:30px 24px 28px;}
+  .tecido-panel + .tecido-panel{
+    border-left:none;
+    border-top:1.5px solid color-mix(in srgb, var(--wood) 30%, transparent);
+  }
+}
