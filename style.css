@@ -72,6 +72,7 @@ header{
 .header-inner{
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 0;
+  margin:0 auto; max-width:1120px; padding:14px 28px;
 }
 .brand-mark{display:flex; align-items:center; gap:10px;}
 .brand-mark img{height:34px; width:auto;}
@@ -233,19 +234,43 @@ section{position:relative; z-index:2;}
 .cta-strip .btn-solid{background:var(--paper); color:var(--wood-dark); border-color:var(--paper);}
 .cta-strip .btn-solid:hover{background:transparent; color:var(--paper);}
 
-/* ---------- FOOTER ---------- */
-footer{padding:50px 0 34px;}
-.footer-grid{
-  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;
+/* ---------- FOOTER (preto + dourado) ---------- */
+.site-footer{
+  position:relative; z-index:2;
+  background:#000; color:#fff;
+  font-size:13px; line-height:1.4;
 }
-.footer-brand{display:flex; align-items:center; gap:10px;}
-.footer-brand img{height:24px;}
-.footer-links{display:flex; gap:22px; font-size:13.5px;}
-.footer-links a{text-decoration:none; color:var(--stone);}
-.footer-links a:hover{color:var(--wood);}
+.footer-top{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+  padding:44px 0 40px;
+}
+.footer-title{
+  font-family:'Jost', sans-serif;
+  font-size:12px; font-weight:700; line-height:1.2;
+  text-transform:uppercase; letter-spacing:.02em;
+  color:#fff; margin-bottom:14px;
+}
+.footer-list{list-style:none;}
+.footer-list li{line-height:36px;}
+.footer-list a,
+.footer-list span{
+  color:#fff; text-decoration:none; font-weight:500;
+  transition:color .2s ease;
+}
+.footer-list a:hover{color:var(--gold);}
+.site-footer a:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+.footer-brand{display:flex; align-items:flex-start; justify-content:flex-end;}
+.footer-brand img{
+  height:44px; width:auto;
+  filter:invert(1) brightness(1.6);
+}
+
 .footer-bottom{
-  margin-top:30px; padding-top:20px; border-top:1px solid color-mix(in srgb, var(--wood) 25%, transparent);
-  font-size:12px; color:var(--stone); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  border-top:1px solid #1f1f1f;
+  padding:24px 0 30px;
+  font-size:12px; color:#9a9a9a;
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
 }
 
 /* ---------- MOBILE NAV (aberto via JS) ---------- */
@@ -267,6 +292,8 @@ nav.open .nav-cta{margin-top:12px; width:100%; justify-content:center;}
   nav{display:none;}
   nav.open{display:flex;}
   .menu-toggle{display:block;}
+  .footer-top{grid-template-columns:1fr; gap:26px; padding:34px 0 28px;}
+  .footer-brand{justify-content:flex-start;}
 }
 @media (max-width:520px){
   .grid-products{grid-template-columns:1fr;}
